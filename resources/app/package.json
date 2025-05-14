@@ -1,0 +1,15 @@
+{
+  "name": "text-to-speech-app",
+  "version": "1.0.0",
+  "description": "Web tabanlı text to speech uygulamasının Electron ile masaüstü uygulamasına dönüşümü",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Adınız",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^25.9.8",
+    "electron-packager": "^17.1.2"
+  }
+}
