@@ -11,7 +11,6 @@ function createWindow () {
       // eğer sadece web teknolojileri kullanacaksanız:
       nodeIntegration: false,
       contextIsolation: true,
-      preload: path.join(__dirname, 'preload.js') // Eğer özel bir preload dosyası kullanacaksanız
     }
   });
 
@@ -33,6 +32,4 @@ app.whenReady().then(() => {
 
 // Tüm pencereler kapatıldığında uygulamayı sonlandırır
 app.on('window-all-closed', function () {
-  // macOS'ta pencere kapatıldığında uygulama tamamen kapanmayabilir
-  if (process.platform !== 'darwin') app.quit();
 });
